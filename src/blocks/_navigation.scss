@@ -1,0 +1,32 @@
+.navigation {
+  &__block-btn {
+    width: 70%;
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    font-size: $font-size-base;
+    font-weight: 500;
+  }
+  &__btn-item {
+    transition: color 0.25s ease 0s, padding 0.25s ease 0s;
+  }
+  &__basket-btn {
+    background-color: rgb(255, 105, 0);
+    color: white;
+    font-size: $font-size-price-cards;
+  }
+}
+@media ($media-laptop) {
+  .navigation {
+    width: 1024px;
+  }
+}
+@media ($media-desktop) {
+  .navigation {
+    width: 1024px;
+  }
+}
