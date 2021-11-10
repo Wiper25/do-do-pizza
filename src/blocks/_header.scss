@@ -18,6 +18,8 @@
     list-style-type: none;
     margin-right: 25px;
   }
+  &__estima {
+  }
   &__dodo-coin {
     display: flex;
     flex-direction: column;
@@ -32,6 +34,7 @@
     justify-content: space-between;
   }
   &__phone-number {
+    padding-top: 11px;
     display: flex;
     flex-direction: column;
     justify-content: center;
