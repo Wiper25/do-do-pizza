@@ -1,9 +1,16 @@
 <template>
   <div class="v-Popular">
+    <!-- <h1 class="v-Popular__title">Часто заказывают</h1> -->
     <div class="v-Popular__slider">
       <div class="v-Popular__cards" :key="i" v-for="(card, i) in cards">
         <div class="v-Popular__card">
-          <img width="80" height="80" :src="images" alt="" />
+          <img
+            class="v-Popular__img"
+            width="80"
+            height="80"
+            :src="images"
+            alt=""
+          />
           <div class="v-Popular__card-text">
             <div class="v-Popular__card-title">{{ card.name }}</div>
             <div class="v-Popular__card-price">{{ card.price }}</div>

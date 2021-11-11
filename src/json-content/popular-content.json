@@ -7,27 +7,31 @@
     },
     {
         "name": "2 пиццы",
-        "price": "949 сом"
+        "price": "949 сом",
+        "images": "../assets/730db614-8678-4465-859c-bd8c9d8ef427.jpg"
 
     },
     {
         "name": "Мексиканская",
-        "price": "от 395 сом"
+        "price": "от 395 сом",
+        "images": "../assets/730db614-8678-4465-859c-bd8c9d8ef427.jpg"
 
     },
     {
         "name": "Комбо за 999 сом",
-        "price": "999 сом"
+        "price": "999 сом",
+        "images": "../assets/730db614-8678-4465-859c-bd8c9d8ef427.jpg"
 
     },
     {
         "name": "Додстер",
-        "price": "149 сом"
+        "price": "149 сом",
+        "images": "../assets/730db614-8678-4465-859c-bd8c9d8ef427.jpg"
 
     },
     {
         "name": "Рулетики с брусникой",
-        "price": "149 сом"
-
+        "price": "149 сом",
+        "images": "../assets/730db614-8678-4465-859c-bd8c9d8ef427.jpg"
     }
 ]

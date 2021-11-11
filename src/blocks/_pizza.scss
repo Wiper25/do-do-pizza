@@ -1,0 +1,63 @@
+.v-Pizza-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: $max-container;
+  margin: 0 auto;
+  &__card-collect {
+    width: 233px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  &__img-description-collect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__price-btn-collect {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn-collect {
+    min-width: 120px;
+    height: 40px;
+  }
+
+  &__card {
+    width: 233px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+  &__img-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__price-btn {
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+    }
+  }
+  &__btn {
+    min-width: 120px;
+    height: 40px;
+    background-color: rgb(255, 240, 230);
+    color: rgb(209, 87, 0);
+  }
+}
+@media ($media-laptop) {
+  .v-Pizza-cards {
+    width: 1024px;
+  }
+}
+@media ($media-desktop) {
+  .v-Pizza-cards {
+    width: 1024px;
+  }
+}

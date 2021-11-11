@@ -3,21 +3,31 @@
   height: 200px;
   display: flex;
   align-items: center;
+  // &__title {
+  //   max-width: $max-container;
+  // }
   &__slider {
     height: auto;
     display: flex;
     transform: translate(170px);
     transition: height 200ms ease-out 0s, opacity;
   }
+  &__img {
+    margin-right: 20px;
+  }
   &__card {
     width: 260px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    font-size: $font-size-price-cards;
+    font-size: 16px;
     border-radius: 12px;
     padding: 16px;
     box-shadow: 0px 4px 21px -8px rgba(0, 0, 0, 0.75);
     margin-right: 24px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.75);
+    }
   }
 }
