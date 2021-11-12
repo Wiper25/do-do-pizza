@@ -1,0 +1,51 @@
+.sipping-and-payment {
+  display: flex;
+  flex-direction: column;
+  max-width: $min-container;
+  margin: 0 auto;
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 32px 0px;
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__under {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 105, 0);
+    text-transform: uppercase;
+  }
+  &__min-price-shipping {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 105, 0);
+    text-transform: uppercase;
+  }
+  &__max-price-shipping {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 105, 0);
+    text-transform: uppercase;
+  }
+  &__zone-sipping-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 105, 0);
+    text-transform: uppercase;
+  }
+  &__sipping {
+    width: 35%;
+    margin-right: 4%;
+  }
+  &__payment {
+    width: 35%;
+    margin-right: 4%;
+  }
+  &__zone-sipping {
+    width: 22%;
+    margin-right: 4%;
+  }
+}

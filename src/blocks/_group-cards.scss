@@ -1,4 +1,4 @@
-.v-Pizza-cards {
+.v-Group-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -52,12 +52,12 @@
   }
 }
 @media ($media-laptop) {
-  .v-Pizza-cards {
+  .v-Group-cards {
     width: 1024px;
   }
 }
 @media ($media-desktop) {
-  .v-Pizza-cards {
+  .v-Group-cards {
     width: 1024px;
   }
 }
