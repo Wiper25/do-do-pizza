@@ -25,6 +25,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+#nav {
+  position: sticky;
+  z-index: 1000;
+  background-color: white;
+  top: 0;
+}
 .navigation {
   max-width: $max-container;
   min-width: $min-container;

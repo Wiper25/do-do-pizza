@@ -1,0 +1,17 @@
+.slider {
+  &__box {
+    overflow: hidden;
+  }
+  &__container {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    transform: translateX(-4200px);
+  }
+  &__item {
+    width: 1024px;
+    height: 300px;
+    margin-right: 24px;
+    border-radius: 20px;
+  }
+}

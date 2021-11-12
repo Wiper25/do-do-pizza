@@ -2,7 +2,7 @@
   <Header class="header">
     <div class="header__info">
       <div class="header__logo">
-        <svg width="250" height="60">
+        <svg width="255" height="45.61">
           <use xlink:href="../assets/logo.svg#inline-svg-63-1" />
         </svg>
       </div>
@@ -14,15 +14,15 @@
         </ul>
       </div>
       <div class="header__phone-number">
-        <a href="">0(551)550-550</a>
+        <a href="">0 (551)550-550</a>
         <p class="header__tel-call-text">Звонок по телефону</p>
       </div>
     </div>
     <div class="header__dodo-coin-and-login">
       <div class="header__dodo-coin">
         <span class="header__dodo-coin-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <use xlink:href="../assets/dodo-coin.svg#dodo-coin" />
+          <svg width="24" height="24">
+            <use xlink:href="../assets/dodo-coin.svg#coin" />
           </svg>
         </span>
         <span>Додокоины</span>
@@ -36,6 +36,12 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    handleScroll(event) {
+      if (window.pageYOffset >= 100) {
+      }
+    },
   },
 };
 </script>

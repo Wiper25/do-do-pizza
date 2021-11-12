@@ -3,6 +3,7 @@
     <div v-if="content[0].type == 'pizza'" class="v-Group-cards__card-collect">
       <div class="v-Group-cards__img-description-collect">
         <img
+          class="v-Group-cards__image"
           width="221"
           height="221"
           :src="require('../assets/pizza-team.jpeg')"
@@ -21,6 +22,7 @@
     <div class="v-Group-cards__card" :key="i" v-for="(card, i) in content">
       <div class="v-Group-cards__img-description">
         <img
+          class="v-Group-cards__image"
           width="221"
           height="221"
           :src="require(`../assets/${card.image}`)"

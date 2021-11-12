@@ -1,0 +1,107 @@
+.footer {
+  color: white;
+  &__title-nav {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__container-top {
+    max-width: $min-container;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__container-bottom {
+    max-width: $min-container;
+    margin: 0 auto;
+    border-bottom: 1px solid #272727;
+  }
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__link {
+    color: #717171;
+    &:hover {
+      color: white;
+    }
+  }
+  &__top {
+    background-color: #ff6900;
+  }
+  &__bottom {
+    background-color: rgb(24, 24, 24);
+    padding-top: 30px;
+  }
+  &__nav-contact {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+  }
+  &__operator-choice {
+    font-weight: 500;
+    color: #717171;
+  }
+  &__link-tel-number {
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    margin: 12px 0px;
+  }
+  &__link-email {
+    color: #717171;
+  }
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  &__license-info {
+    display: flex;
+    align-items: center;
+    color: #717171;
+    font-size: 16px;
+  }
+  &__container-licendse {
+    max-width: $min-container;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    color: #717171;
+    margin-left: 10px;
+    &:hover {
+      color: white;
+    }
+  }
+  &__logo-footer {
+    fill: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+  }
+  &__icon-facebook {
+    background-color: rgba(196, 196, 196, 0.2);
+    margin: 5px;
+    border-radius: 5px;
+    fill: rgba(255, 255, 255, 0.7);
+  }
+  &__icon-instagram {
+    background-color: rgba(196, 196, 196, 0.2);
+    fill: rgba(255, 255, 255, 0.7);
+    margin: 5px;
+    border-radius: 5px;
+  }
+}

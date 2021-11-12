@@ -2,9 +2,14 @@
   <div class="navigation">
     <nav class="navigation__block-btn">
       <ul class="navigation__btns">
-        <svg v-if="false" width="36" height="36">
-          <use xlink:href="../assets/logo-nav.svg#logo_svg__Layer_1" />
-        </svg>
+        <img
+          style="transition: transform 0.25s ease 0s"
+          v-if="logo"
+          width="36"
+          height="36"
+          src="../assets/logo-dodo-icon.png"
+          alt=""
+        />
         <a class="navigation__btn-item" href=""><li>Пицца</li></a>
         <a class="navigation__btn-item" href=""><li>Комбо</li></a>
         <a class="navigation__btn-item" href=""><li>Закуски</li></a>
@@ -20,4 +25,25 @@
     <button class="navigation__basket-btn">Корзина</button>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      logo: false,
+    };
+  },
+  methods: {
+    handleScroll() {
+      if (window.pageYOffset >= 100) {
+        this.logo = true;
+      } else if (window.pageYOffset < 100) {
+        this.logo = false;
+      }
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+};
+</script>
 <style lang="scss" scoped></style>
