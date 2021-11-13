@@ -6,12 +6,19 @@
     display: flex;
     max-width: 1024px;
     margin: 0 auto;
-    transform: translateX(-4200px);
   }
   &__item {
     width: 1024px;
     height: 300px;
-    margin-right: 24px;
+    margin-right: 26px;
     border-radius: 20px;
+  }
+}
+@media ($media-laptop) {
+  .slider {
+  }
+}
+@media ($media-desktop) {
+  .slider {
   }
 }

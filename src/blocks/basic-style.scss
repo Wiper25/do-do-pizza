@@ -17,7 +17,6 @@ a {
 }
 header {
   max-width: $max-container;
-  min-width: $min-container;
   margin: 0 auto;
   padding: 0px 32px;
   height: 100px;
@@ -33,7 +32,6 @@ header {
 }
 .navigation {
   max-width: $max-container;
-  min-width: $min-container;
   margin: 0 auto;
   padding: 0px 32px;
   height: 58px;
