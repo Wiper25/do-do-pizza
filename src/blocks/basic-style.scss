@@ -15,15 +15,7 @@ a {
   text-decoration: none;
   color: black;
 }
-header {
-  max-width: $max-container;
-  margin: 0 auto;
-  padding: 0px 32px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 #nav {
   position: sticky;
   z-index: 1000;
@@ -31,11 +23,7 @@ header {
   top: 0;
 }
 .navigation {
-  max-width: $max-container;
-  margin: 0 auto;
-  padding: 0px 32px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+header {
 }

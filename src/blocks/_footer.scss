@@ -48,6 +48,10 @@
     text-align: end;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__nav-contact-mobile {
+    display: none;
   }
   &__operator-choice {
     font-weight: 500;
@@ -103,5 +107,54 @@
     fill: rgba(255, 255, 255, 0.7);
     margin: 5px;
     border-radius: 5px;
+  }
+}
+@media ($media-phone) {
+  .footer {
+  }
+}
+@media ($media-laptop) {
+  .footer {
+  }
+}
+@media (max-width: 930px) {
+  .footer {
+    &__bottom {
+      padding: 20px 15px 0px;
+    }
+    &__nav {
+      flex-direction: column;
+    }
+    &__nav-dodo-pizza {
+      margin: 10px 0px;
+    }
+    &__nav-work {
+      margin: 10px 0px;
+    }
+    &__nav-partners {
+      margin: 10px 0px;
+    }
+    &__nav-interesting {
+      margin: 10px 0px;
+    }
+    &__nav-contact {
+      margin: 10px 0px;
+      display: none;
+    }
+    &__nav-contact-mobile {
+      margin: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #272727;
+      padding-bottom: 15px;
+      color: white;
+    }
+    &__payment {
+      display: none;
+    }
+  }
+}
+@media ($media-desktop) {
+  .footer {
   }
 }

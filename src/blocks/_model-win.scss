@@ -1,0 +1,55 @@
+.vModelWindow {
+  width: 100%;
+  height: 50vmax;
+  background-color: rgba(0, 0, 0, 0.556);
+  z-index: 1001;
+  position: fixed;
+  transition: opacity 150ms ease 0s;
+  display: flex;
+  justify-content: center;
+  &__img-product {
+    width: 50%;
+    height: 50%;
+  }
+  &__contant {
+    display: flex;
+    position: relative;
+    top: 19%;
+    align-items: center;
+  }
+  &__description-product {
+    position: absolute;
+    background: #fcfcfc;
+    height: 10rem;
+    width: 50%;
+    border-right-width: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    left: 45%;
+  }
+  &__menu-model {
+    width: 68%;
+    height: 388px;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  &__cross {
+    font-size: 60px;
+    width: auto;
+    margin-top: 30px;
+    color: white;
+    font-weight: 300;
+    height: 90px;
+    background-color: transparent;
+  }
+  &__image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

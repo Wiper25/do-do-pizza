@@ -19,12 +19,18 @@
         <button class="v-Group-cards__btn-collect">Собрать</button>
       </div>
     </div>
-    <div class="v-Group-cards__card" :key="i" v-for="(card, i) in content">
+
+    <div
+      class="v-Group-cards__card"
+      :key="i"
+      v-for="(card, i) in content"
+      @click="addCardBasket(card)"
+    >
       <div class="v-Group-cards__img-description">
         <img
           class="v-Group-cards__image"
-          width="221"
-          height="221"
+          width="200"
+          height="200"
           :src="require(`../assets/${card.image}`)"
           alt=""
         />
@@ -37,7 +43,35 @@
       </div>
       <div class="v-Group-cards__price-btn">
         <p>{{ card.price }}</p>
-        <button class="v-Group-cards__btn">{{ card.button }}</button>
+        <button class="v-Group-cards__btn">
+          {{ card.button }}
+        </button>
+      </div>
+    </div>
+    <div
+      class="v-Group-cards__card-mobile"
+      :key="i + 50"
+      v-for="(card, i) in content"
+    >
+      <div class="v-Group-cards__content">
+        <img
+          class="v-Group-cards__image"
+          width="221"
+          height="221"
+          :src="require(`../assets/${card.image}`)"
+          alt=""
+        />
+        <div class="v-Group-cards__description">
+          <h2>{{ card.name }}</h2>
+          <p>
+            {{ card.desctiption }}
+          </p>
+          <div class="v-Group-cards__price-btn">
+            <button class="v-Group-cards__btn">
+              {{ card.price }}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -46,11 +80,15 @@
 <script>
 export default {
   props: ["content"],
-
   data() {
     return {};
   },
-  methods: {},
-  mounted() {},
+  methods: {
+    addCardBasket(card) {
+      this.$store.commit("OPEN_MODEL", true);
+      this.$store.commit("OBJ_MODEL_BASKET", card);
+    },
+  },
+  // mounted() {},
 };
 </script>

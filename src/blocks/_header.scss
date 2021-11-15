@@ -1,4 +1,14 @@
 .header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 32px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__btn-burger-menu {
+    display: none;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
@@ -64,11 +74,56 @@
     font-size: 15px;
   }
 }
-@media ($media-laptop) {
+// @media ($media-phone) {
+//   .header {
+//   }
+// }
+// @media ($media-laptop) {
+//   .header {
+//   }
+// }
+@media (max-width: 930px) {
   .header {
+    width: 100%;
+    &__grade {
+      display: none;
+    }
+    &__phone-number {
+      display: none;
+    }
+    &__dodo-coin-and-login {
+      display: none;
+    }
+    &__btn-burger-menu {
+      display: block;
+    }
   }
 }
 @media ($media-desktop) {
   .header {
+    &__info {
+      width: 80%;
+    }
   }
 }
+
+// @media ($media-phone) {
+//   .header {
+//   }
+// }
+// @media ($media-portrait-phon) {
+//   .header {
+//   }
+// }
+// @media ($media-tablet) {
+//   .header {
+//   }
+// }
+// @media ($media-laptop) {
+//   .header {
+//   }
+// }
+// @media ($media-desktop) {
+//   .header {
+//   }
+// }

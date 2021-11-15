@@ -26,8 +26,8 @@ export default {
     };
   },
   mounted() {
-    console.log(this.sliderTransform);
-    console.log(this.transform);
+    // console.log(this.sliderTransform);
+    // console.log(this.transform);
   },
 };
 </script>

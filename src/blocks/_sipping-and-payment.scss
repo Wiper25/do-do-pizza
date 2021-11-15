@@ -49,3 +49,20 @@
     margin-right: 4%;
   }
 }
+@media ($media-phone) {
+  .sipping-and-payment {
+  }
+}
+@media ($media-laptop) {
+  .sipping-and-payment {
+  }
+}
+@media (max-width: 930px) {
+  .sipping-and-payment {
+    display: none;
+  }
+}
+@media ($media-desktop) {
+  .sipping-and-payment {
+  }
+}

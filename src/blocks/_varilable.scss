@@ -11,5 +11,10 @@ $font-size-title-: 24px;
 
 $border-radius-btn: 9999px;
 
-$media-laptop: "max-width:1279px";
-$media-desktop: "max-width:1439px";
+$media-phone: "max-width:320px";
+$media-laptop: "max-width:768px";
+$media-desktop: "max-width:1365px";
+
+// $media-phone: "min-width:320px";
+// $media-laptop: "min-width:768px";
+// $media-desktop: "min-width:1366px";

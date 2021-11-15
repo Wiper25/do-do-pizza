@@ -11,6 +11,11 @@
 
     <div class="footer__bottom">
       <div class="footer__container-bottom">
+        <div class="footer__nav-contact-mobile">
+          <span class="footer__operator-choice">звонок по</span>
+          <a class="footer__link-tel-number" href="">0(312)550-550</a>
+          <a class="footer__link-email" href="">feedback@dodopizza.kg</a>
+        </div>
         <div class="footer__nav">
           <div class="footer__nav-dodo-pizza">
             <h3 class="footer__title-nav">Додо пицца</h3>

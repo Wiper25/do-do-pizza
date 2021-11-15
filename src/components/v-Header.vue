@@ -29,6 +29,7 @@
       </div>
       <button>Войти</button>
     </div>
+    <div class="header__btn-burger-menu">Burger-menu</div>
   </Header>
 </template>
 

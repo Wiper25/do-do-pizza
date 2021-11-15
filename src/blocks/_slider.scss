@@ -14,11 +14,16 @@
     border-radius: 20px;
   }
 }
+@media ($media-phone) {
+  .slider {
+  }
+}
 @media ($media-laptop) {
   .slider {
   }
 }
 @media ($media-desktop) {
   .slider {
+    display: none;
   }
 }

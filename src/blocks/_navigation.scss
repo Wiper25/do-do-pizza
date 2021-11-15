@@ -1,11 +1,18 @@
+.container {
+  max-width: 1024px;
+}
 .navigation {
-  // &__anima {
-  //   transition: all 0.5s;
-  // }
+  margin: 0 auto;
+  padding: 0px 32px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__block-btn {
-    width: 70%;
+    width: 75%;
   }
   &__btns {
+    transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +22,7 @@
     font-weight: 500;
   }
   &__btn-item {
-    transition: color 0.25s ease 0s, padding 0.25s ease 0s;
+    // transition: color 0.25s ease 0s, padding 0.25s ease 0s;
   }
   &__basket-btn {
     background-color: rgb(255, 105, 0);
@@ -24,8 +31,40 @@
     height: 40px;
   }
 }
+
+@media ($media-phone) {
+  .navigation {
+  }
+}
 @media ($media-laptop) {
   .navigation {
+  }
+}
+@media (max-width: 930px) {
+  .navigation {
+    width: 100%;
+    overflow-x: auto;
+    height: 65px;
+    &__btn-item {
+      padding: 0px 16px;
+      border-radius: 20px;
+      background: rgb(243, 243, 247);
+      color: rgb(92, 99, 112);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 32px;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+    &__router {
+      display: none;
+    }
+    &__basket-btn {
+      display: none;
+    }
+    &__block-btn {
+      width: 75%;
+    }
   }
 }
 @media ($media-desktop) {

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <vModelWindow v-if="this.$store.getters.OPEN" />
     <vHeader />
     <div id="nav">
       <vNav />
@@ -20,6 +21,7 @@
 </template>
 <script>
 import vHeader from "./components/v-Header.vue";
+import vModelWindow from "./components/v-Model-window.vue";
 import vNav from "./components/v-Nav.vue";
 import vSlider from "./components/v-Slider.vue";
 import vPopular from "./components/v-Popular.vue";
@@ -37,6 +39,7 @@ import otherContent from "./json-content/other-content.json";
 export default {
   components: {
     vHeader,
+    vModelWindow,
     vNav,
     vSlider,
     vPopular,
@@ -44,6 +47,7 @@ export default {
     vShippingAndPayment,
     vFooter,
   },
+
   data() {
     return {
       pizzaContent: pizzaContent,
@@ -54,7 +58,8 @@ export default {
       otherContent: otherContent,
     };
   },
-  computed: {},
+  methods: {},
+  mounted() {},
 };
 </script>
 <style lang="scss">

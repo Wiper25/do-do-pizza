@@ -2,8 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: $max-container;
+  max-width: 1024px;
   margin: 0 auto;
+  &__card-mobile {
+    display: none;
+  }
   &__card-collect {
     width: 233px;
     margin-right: 30px;
@@ -58,8 +61,31 @@
     color: rgb(209, 87, 0);
   }
 }
+@media ($media-phone) {
+  .v-Group-cards {
+  }
+}
 @media ($media-laptop) {
   .v-Group-cards {
+  }
+}
+@media (max-width: 930px) {
+  .v-Group-cards {
+    padding: 0px 16px;
+    font-size: 12px;
+    flex-direction: column;
+    &__card {
+      display: none;
+    }
+    &__card-mobile {
+      display: block;
+    }
+    &__content {
+      display: flex;
+      border-bottom: 1px solid rgb(243, 243, 247);
+      padding: 16px 0px;
+      align-items: center;
+    }
   }
 }
 @media ($media-desktop) {
