@@ -1,0 +1,69 @@
+.vBasket {
+  width: 100%;
+  height: 50vmax;
+  background-color: rgba(0, 0, 0, 0.556);
+  z-index: 1001;
+  position: fixed;
+  transition: opacity 150ms ease 0s;
+  display: flex;
+  justify-content: flex-end;
+  &__product-block {
+    height: 85%;
+    overflow: auto;
+  }
+  &__img-product {
+    width: 50%;
+    height: 50%;
+  }
+  &__send-order {
+    width: 80%;
+    background-color: orange;
+    margin-top: 2%;
+  }
+  &__contant {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 0px 10px;
+  }
+  &__description-product {
+    // font-size: 13px;
+    // position: absolute;
+    // background: #fcfcfc;
+    // height: 10rem;
+    // width: 50%;
+    // border-right-width: 20px;
+    // padding: 10px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+    // left: 45%;
+  }
+  &__menu {
+    min-width: 30%;
+    width: 30%;
+    height: 100%;
+    background-color: #f3f3f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__cross {
+    font-size: 60px;
+    width: auto;
+    margin-top: 20%;
+    color: white;
+    font-weight: 300;
+    height: 90px;
+    background-color: transparent;
+  }
+  &__image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

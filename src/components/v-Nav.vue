@@ -26,7 +26,9 @@
           >
         </ul>
       </nav>
-      <button class="navigation__basket-btn">Корзина {{ this.count }}</button>
+      <button class="navigation__basket-btn" @click="openBasketMenu(true)">
+        Корзина {{ lengthProductBasket }}
+      </button>
     </div>
   </div>
 </template>
@@ -41,7 +43,19 @@ export default {
         "transform: translateX(0px);transition: transform 0.25s ease 0s;",
     };
   },
+  computed: {
+    lengthProductBasket() {
+      if (this.$store.getters.ADD_BASKET.length == 0) {
+        return "";
+      } else {
+        return this.$store.getters.ADD_BASKET.length;
+      }
+    },
+  },
   methods: {
+    openBasketMenu(status) {
+      this.$store.commit("OPEN_BASKET", status);
+    },
     handleScroll() {
       if (window.pageYOffset >= 100) {
         this.logo = true;

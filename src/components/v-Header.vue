@@ -29,14 +29,18 @@
       </div>
       <button>Войти</button>
     </div>
-    <div class="header__btn-burger-menu">Burger-menu</div>
+    <div @click="burgerMenu" class="header__btn-burger-menu">
+      <hr />
+    </div>
   </Header>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      burgerMenu: true,
+    };
   },
   methods: {
     handleScroll(event) {

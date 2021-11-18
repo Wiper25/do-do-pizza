@@ -1,6 +1,6 @@
 <template>
   <div class="v-Group-cards">
-    <div v-if="content[0].type == 'pizza'" class="v-Group-cards__card-collect">
+    <!-- <div v-if="content[0].type == 'pizza'" class="v-Group-cards__card-collect">
       <div class="v-Group-cards__img-description-collect">
         <img
           class="v-Group-cards__image"
@@ -18,7 +18,7 @@
         <p>от 520 сом</p>
         <button class="v-Group-cards__btn-collect">Собрать</button>
       </div>
-    </div>
+    </div> -->
 
     <div
       class="v-Group-cards__card"
@@ -52,6 +52,7 @@
       class="v-Group-cards__card-mobile"
       :key="i + 50"
       v-for="(card, i) in content"
+      @click="addCardBasket(card)"
     >
       <div class="v-Group-cards__content">
         <img

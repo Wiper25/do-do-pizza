@@ -12,13 +12,15 @@
         <div class="vModelWindow__description-product">
           <h2>{{ item.name }}</h2>
           <p>{{ item.desctiption }}</p>
-          <button @click="setObject(item, false)">Добавить в корзину</button>
+          <button @click="setCardBasket(item, false)">
+            Добавить в корзину
+          </button>
         </div>
       </div>
     </div>
     <button
       class="vModelWindow__cross"
-      @click="exitModelWindow(false)"
+      @click="closeModelWindow(false)"
       href="#"
     >
       &#215;
@@ -36,15 +38,14 @@ export default {
     };
   },
   methods: {
-    exitModelWindow(status) {
+    closeModelWindow(status) {
       this.$store.commit("OPEN_MODEL", status);
       this.$store.commit("CLEAR_MODEL_BASKET", []);
     },
-    setObject(item, status) {
-      this.basket.push(item);
+    setCardBasket(item, status) {
       this.$store.commit("OPEN_MODEL", status);
+      this.$store.commit("ADD_PRODUCT_BASKET", item);
       this.$store.commit("CLEAR_MODEL_BASKET", []);
-      localStorage.setItem(`order`, JSON.stringify(item));
     },
   },
   mounted() {},

@@ -1,11 +1,10 @@
 .header {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0px 32px;
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   &__btn-burger-menu {
     display: none;
   }
@@ -73,6 +72,12 @@
     padding: 0;
     font-size: 15px;
   }
+  &__burgerMenuMobile {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 212312312;
+  }
 }
 // @media ($media-phone) {
 //   .header {
@@ -84,7 +89,7 @@
 // }
 @media (max-width: 930px) {
   .header {
-    width: 100%;
+    width: 95%;
     &__grade {
       display: none;
     }
@@ -96,6 +101,10 @@
     }
     &__btn-burger-menu {
       display: block;
+      height: 15px;
+      width: 30px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
     }
   }
 }

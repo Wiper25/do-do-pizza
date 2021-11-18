@@ -1,0 +1,10 @@
+.vBurgerMenu {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2123;
+  &__logo-img {
+    width: 100px;
+  }
+}
