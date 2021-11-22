@@ -4,11 +4,39 @@
       &#215;
     </button>
     <div class="vBasket__menu">
+      <div class="vBasket__title-block">
+        <h2 class="vBasket__title">3 товара на 1 457 сом</h2>
+      </div>
+      <div class="vBasket__product-block" :key="i" v-for="(item, i) in оrder">
+        <div class="vBasket__product-top">
+          <div class="vBasket__image-block">
+            <img
+              class="vBasket__img-product"
+              :src="require(`../assets/${item.image}`)"
+              alt=""
+            />
+          </div>
+          <div class="vBasket__name-description-product">
+            <div class="vBasket__name">{{ item.name }}</div>
+            <div class="vBasket__description">
+              Средняя 30 см, традиционное тесто
+            </div>
+          </div>
+        </div>
+        <div class="vBasket__product-bottom">
+          <div class="vBasket__price-product">399 сом</div>
+          <div class="vBasket__counter-product">
+            <span><strong>-</strong></span
+            >1<span><strong>+</strong></span>
+          </div>
+        </div>
+      </div>
+      <!-- 
       <div class="vBasket__product-block">
         <div :key="i" v-for="(item, i) in оrder" class="vBasket__contant">
           <div class="vBasket__image">
             <img
-              class="vModelWindow__img-product"
+              class="vBasket__img-product"
               :src="require(`../assets/${item.image}`)"
               alt=""
             />
@@ -19,6 +47,7 @@
           </div>
         </div>
       </div>
+      <button class="vBasket__send-order">К оформлению заказа</button> -->
       <button class="vBasket__send-order">К оформлению заказа</button>
     </div>
   </div>

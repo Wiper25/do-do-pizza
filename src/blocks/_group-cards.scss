@@ -55,10 +55,28 @@
     }
   }
   &__btn {
-    min-width: 120px;
+    min-width: 96px;
     height: 40px;
     background-color: rgb(255, 240, 230);
     color: rgb(209, 87, 0);
+    margin-top: 12px;
+    height: 32px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    align-self: flex-start;
+  }
+  &__description {
+    margin-left: 10px;
+    & h2 {
+      margin: 0;
+    }
+    & p {
+      font-size: 12px;
+      line-height: 16px;
+      color: rgb(92, 99, 112);
+      margin: 0;
+    }
   }
 }
 @media ($media-phone) {

@@ -1,40 +1,46 @@
 .vModelWindow {
   width: 100%;
-  height: 50vmax;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.556);
   z-index: 1001;
   position: fixed;
   transition: opacity 150ms ease 0s;
   display: flex;
   justify-content: center;
+  align-items: center;
+  &__title {
+    margin-bottom: 2px;
+  }
   &__img-product {
     width: 50%;
-    height: 50%;
+    min-width: 140px;
+    max-width: 360px;
   }
   &__contant {
     display: flex;
     position: relative;
-    top: 19%;
     align-items: center;
+    height: 100%;
   }
   &__description-product {
     position: absolute;
     background: #fcfcfc;
-    height: 10rem;
-    width: 50%;
+    height: 100%;
+    width: 40%;
     border-right-width: 20px;
-    padding: 10px;
+    padding: 0px 30px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    left: 45%;
+    left: 54%;
   }
   &__menu-model {
     width: 68%;
-    height: 388px;
-    margin-top: 100px;
+    height: 610px;
     border-radius: 20px;
     background-color: white;
+    overflow: hidden;
+    padding-bottom: 25px;
   }
   &__cross {
     font-size: 60px;
@@ -42,14 +48,210 @@
     margin-top: 30px;
     color: white;
     font-weight: 300;
-    height: 90px;
+    height: 100%;
     background-color: transparent;
+    display: flex;
   }
   &__image {
-    width: 50%;
+    width: 54%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
+  &__btnAddBasket {
+    width: 100%;
+    height: 48px;
+    background-color: rgb(255, 105, 0);
+    color: rgb(255, 255, 255);
+  }
+  &__btnAddBasket:hover {
+    background-color: #e26006;
+  }
+  &__params-product {
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+  }
+  &__params-size {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 8px;
+    background-color: #f3f3f7;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__params-board {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 8px;
+    background-color: rgb(243, 243, 247);
+    border-radius: 9999px;
+  }
+  &__params-size-small {
+    height: 82%;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  &__params-size-average {
+    height: 82%;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  &__params-size-big {
+    height: 82%;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  &__params-board {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 8px;
+    background-color: #f3f3f7;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__params-board-traditional {
+    height: 82%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  &__params-board-thin {
+    height: 82%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
+  &__cross-mobile {
+    display: none;
+  }
+  &__additives {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__additives-card {
+    background-color: white;
+    width: 31%;
+    min-height: 175px;
+    padding: 8px;
+    box-shadow: rgba(6, 5, 50, 0.12) 0px 4px 20px;
+    border-radius: 12px;
+    margin: 0px 8px 8px 0px;
+  }
+  &__additives-img {
+    width: 100%;
+    height: auto;
+  }
+  &__additives-name {
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+  }
+  &__additives-price {
+    margin: 0;
+    margin-top: 5px;
+  }
+  &__btnAddBasket {
+  }
+}
+.active {
+  background-color: white;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: 0px 6px 20px rgba(6, 5, 50, 0.2);
+}
+@media ($media-phone) {
+}
+@media ($media-laptop) {
+}
+@media (max-width: 920px) {
+  .vModelWindow {
+    &__image {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__img-product {
+      width: 100%;
+      height: auto;
+      min-width: 140px;
+      max-width: 360px;
+    }
+    &__cross {
+      display: none;
+    }
+    &__menu-model {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 0px;
+    }
+
+    &__description-product {
+      position: static;
+      background: white;
+      height: 50%;
+      width: 90%;
+      padding: 0px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    &__contant {
+      display: flex;
+      position: relative;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+    }
+    &__cross-mobile {
+      display: block;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: white;
+      border-radius: 100px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 12px;
+      z-index: 1000;
+      font-size: 52px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+@media ($media-desktop) {
 }

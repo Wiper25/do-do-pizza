@@ -27,7 +27,10 @@
         </ul>
       </nav>
       <button class="navigation__basket-btn" @click="openBasketMenu(true)">
-        Корзина {{ lengthProductBasket }}
+        Корзина
+        <span :class="{ 'navigation__count-basket': lengthProductBasket }">{{
+          lengthProductBasket
+        }}</span>
       </button>
     </div>
   </div>

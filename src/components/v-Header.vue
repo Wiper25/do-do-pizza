@@ -29,7 +29,7 @@
       </div>
       <button>Войти</button>
     </div>
-    <div @click="burgerMenu" class="header__btn-burger-menu">
+    <div @click="burgerMenu(true)" class="header__btn-burger-menu">
       <hr />
     </div>
   </Header>
@@ -38,14 +38,11 @@
 <script>
 export default {
   data() {
-    return {
-      burgerMenu: true,
-    };
+    return {};
   },
   methods: {
-    handleScroll(event) {
-      if (window.pageYOffset >= 100) {
-      }
+    burgerMenu(status) {
+      this.$store.commit("BURGER_STATUS_BTN", status);
     },
   },
 };

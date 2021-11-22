@@ -57,8 +57,8 @@
       <div class="v-Group-cards__content">
         <img
           class="v-Group-cards__image"
-          width="221"
-          height="221"
+          width="128"
+          height="128"
           :src="require(`../assets/${card.image}`)"
           alt=""
         />
@@ -90,6 +90,5 @@ export default {
       this.$store.commit("OBJ_MODEL_BASKET", card);
     },
   },
-  // mounted() {},
 };
 </script>

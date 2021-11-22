@@ -1,15 +1,24 @@
 .v-Popular {
-  overflow: hidden;
+  // overflow: hidden;
   height: 200px;
   display: flex;
   align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   // &__title {
   //   max-width: $max-container;
   // }
+
   &__slider {
-    height: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: rgba(255, 255, 255, 0);
+    }
+
+    height: 130px;
+    overflow: auto;
     display: flex;
-    transform: translate(170px);
+    transform: translate(165px);
     transition: height 200ms ease-out 0s, opacity;
   }
   &__img {
@@ -40,10 +49,27 @@
 }
 @media ($media-laptop) {
   .v-Popular {
+    height: 125px;
+    margin-top: 20px;
+    &__slider {
+      overflow: scroll;
+      transform: translate(35px);
+    }
+    &__card {
+      width: 240px;
+      height: 108px;
+    }
   }
 }
+
 @media ($media-desktop) {
   .v-Popular {
-    display: none;
+    display: block;
+    height: 200px;
+  }
+}
+@media (max-width: 920px) {
+  .v-Popular {
+    height: 125px;
   }
 }

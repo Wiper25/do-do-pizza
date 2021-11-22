@@ -24,10 +24,10 @@ export default {
         basket: []
     },
     getters: {
-        OPEN_MODEL(state) {
+        OPEN_MODEL_DESKTOP(state) {
             return state.status_model
         },
-        OPEN_BASKET(state) {
+        OPEN_BASKET_DESKTOP(state) {
             return state.status_basket
         },
         CARD_BASKET: (state) => {

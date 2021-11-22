@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &__count-basket {
+    border-left: 1px solid;
+    padding-left: 5px;
+  }
   &__block-btn {
     width: 75%;
   }
